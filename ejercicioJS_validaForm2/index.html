@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM JS/VALIDATIONS></title>
+    <meta name="description" content="ONLY VALIDATIOS CONDITIONALS REGEX - NO BLUR OR FOCUS EVENTS.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h2>Form JS/VALIDATIONS </h2>
+
+    <form id="myForm" method="GET">
+        <!-- **Modified the method** -->
+        <div>
+            <div>
+                <label for="nombre">Nombre:<br></label>
+                <input class="camposInput" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <p id="aciertoNombre"></p>
+                <br>
+
+                <label for="apellidos">Apellidos:<br></label>
+                <input class="camposInput" type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+                <p id="aciertoApellidos"></p>
+                <br>
+
+                <label for="edad">Edad:<br></label>
+                <input type="number" id="edad" name="edad" placeholder="Edad > 18">
+                <p id="aciertoEdad"></p>
+                <br>
+
+                <label for="nif">NIF:<br></label>
+                <input class="camposInput" type="text" id="nif" name="nif" placeholder="DNI" required>
+                <p id="aciertoNIF"></p>
+                <br>
+
+                <label for="email">Email:<br></label>
+                <input class="camposInput" type="email" id="email" name="email" placeholder="Email" required>
+                <p id="aciertoEmail"></p>
+                <br>
+            </div>
+            <div>
+                <label for="">Género:</label><br>
+                M<input type="radio" id="m" name="genero" value="m">
+                F<input type="radio" id="f" name="genero" value="f">
+                NC<input type="radio" id="nc" name="genero" value="nc">
+                <br>
+
+                <label for="noticias">¿Quieres recibir noticias?</label>
+                <input type="checkbox" id="noticias" name="noticias" value="noticias">
+                <br>
+
+                <label for="normas">¿Se han leído las normas?</label>
+                <input type="checkbox" id="normas" name="normas" value="normas" required>
+                <p id="aciertoNormas"></p>
+                <br>
+                <div class="container-input-btn">
+                    <input class="btn" type="submit" value="Enviar">
+                    <input class="btn" type="reset" value="Resetear">
+                </div>
+            </div>
+            <br>
+            <div>
+    </form>
+
+
+    <!-- <script src="script/test.js"></script>  -->
+    <script src="script/script.js"></script>
+</body>
+
+</html>
